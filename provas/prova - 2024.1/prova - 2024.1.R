@@ -26,3 +26,17 @@ qt(0.95, min((length(data_sentado) - 1), (length(data_deitado) - 1)))
 t <- abs(media_deitado - media_sentado) / sqrt((dp_sentado ^ 2 / length(data_sentado)) + (dp_deitado ^ 2 / length(data_deitado)))
 
 # como t > qt(); podemos rejeitar a hipótese nula
+
+# 3
+data_coroas <- c(21, 21, 21, 22, 22, 23, 23, 23, 24, 24, 25, 25, 25, 25, 26, 26, 26, 28, 30, 31, 31, 32, 33, 33, 33, 34, 34, 35, 35, 36)
+
+#3. a
+media_coroa <- mean(data_coroas)
+mediana_coroa <- median(data_coroas)
+var_coroa <- var(data_coroas)
+
+# 3. b
+pct <- 100 * (sum(data_coroas > 30) / length(data_coroas))
+
+# 3. c
+hist(data_coroas)
