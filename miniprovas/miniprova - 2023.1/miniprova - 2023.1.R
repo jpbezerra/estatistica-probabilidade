@@ -7,8 +7,7 @@ mediana_zod <- median(data_zod$Votos)
 dp_zod <- sd(data_zod$Votos)
 
 # 1. d
-pie(data_zod$Votos, labels = data_zod$Animal, col = rainbow(length(data_zod$Votos))
-    )
+pie(data_zod$Votos, labels = data_zod$Animal, col = rainbow(length(data_zod$Votos)))
 
 # 2
 data_picole <- read.csv("amostra_picoles.csv", sep = ",")
